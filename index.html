@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Notes Taking App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Notes Taking App</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Search notes...">
+            <button id="toggleTheme">
+                <i class="fas fa-adjust"></i> Toggle Theme
+            </button>
+        </div>
+    </header>
+
+    <nav>
+        <label for="categories">Filter by Category:</label>
+        <select id="categories">
+            <option value="all">All</option>
+            <option value="work">Work</option>
+            <option value="personal">Personal</option>
+            <option value="ideas">Ideas</option>
+        </select>
+    </nav>
+
+    <main>
+        <button id="addBtn">
+            <i class="fas fa-plus"></i> Add Note
+        </button>
+        <div id="stats">
+            <p>Total Notes: <span id="totalNotes">0</span></p>
+        </div>
+        <div id="notesList">
+            <div id="main">
+                <div class="note">
+                    <div class="tool">
+                        <i class="fas fa-save"></i>
+                        <i class="fas fa-trash"></i>
+                    </div>
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Notes Taking App. All rights reserved.</p>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/0c76f271d6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
